@@ -8,6 +8,8 @@ userRouter.post("/register", validationMiddleware, register);
 userRouter.post("/login", validationMiddleware, login);
 userRouter.delete("/logout", logout);
 
+// to do: userRouter.get("/test", test); // jwt action that check first in redis and then in pg
+
 // for testing, select all users
 userRouter.get("/admin", selectAll);
 
